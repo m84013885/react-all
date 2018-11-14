@@ -1,0 +1,38 @@
+.userBox {
+  position: relative;
+  width: 506rpx;
+  margin: 28rpx auto 0;
+}
+
+.chain {
+  position: absolute;
+  width: 22rpx;
+  height: 84rpx;
+  z-index: 2;
+}
+
+.chainLeft {
+  composes: chain;
+  left: 24rpx;
+  background-image: url("../../../images/index/chain@2x.png");
+}
+
+.chainRight {
+  composes: chain;
+  right: 24rpx;
+  background-image: url("../../../images/index/chain@2x.png");
+}
+
+.chainPostop {
+  top: -55rpx;
+}
+.chainPosbottom {
+  bottom: -55rpx;
+}
+.infoWrapper {
+  height: 180rpx;
+  background: #F55340;
+  box-shadow: inset 0 -1px 3px 0 #C94535, inset 0 1px 3px 0 #FFA79C;
+  border-radius: 20rpx;
+  overflow: hidden;
+}

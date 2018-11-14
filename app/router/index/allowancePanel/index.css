@@ -1,0 +1,130 @@
+.allowancePanel {
+  width: 710rpx;
+  background: #F55340;
+  box-shadow: inset 0 -1px 3px 0 #C94535, inset 0 1px 3px 0 #FFA79C;
+  border-radius: 28rpx;
+  padding-top: 20rpx;
+  padding-bottom: 40rpx;
+  margin: 60rpx auto 0;
+}
+.allowanceTable {
+}
+
+.table {
+  width: 670rpx;
+  margin: 0 auto;
+  background: #FDF2F2;
+  border-collapse: collapse;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+.tableRow {
+  
+}
+
+.table td {
+  border: 1px solid #FDDEDE;
+  text-align: center;
+}
+
+.table > thead {
+  background: #FDF2F2;
+}
+.table > thead tr:nth-child(1) {
+  height: 80rpx;
+}
+.table > thead tr:nth-child(2) {
+  height: 72rpx;
+}
+.table > thead td {
+  font-weight: 500;
+  font-size: 32rpx;
+  color: #BB3121;
+  text-align: center;
+}
+
+/* table body */
+.table > tbody td:nth-child(1){
+  width: 254rpx;
+}
+.table > tbody td:nth-child(2){
+  width: 196rpx;
+}
+.table > tbody td:nth-child(3){
+  position: relative;
+  overflow: hidden;
+}
+.table > tbody td {
+  /* font-weight: 500; */
+  font-size: 36rpx;
+  color: #BB3121;
+  text-align: center;
+}
+.table > tbody tr {
+  height: 120rpx;
+}
+.table > tbody span {
+  display: block;
+  white-space: nowrap;
+}
+.table > tbody tr:nth-child(odd) {
+  background-color: #FFF9FF;
+}
+
+.withAllowance {
+  color: #FF0000;
+  line-height: 1.2;
+}
+.allowanceCount { 
+  font-size: 24rpx;
+  color: #CE9E98;
+  line-height: 1;
+}
+.discount {
+  position: absolute;
+  top: -50rpx;
+  left: -50rpx;
+  width: 96rpx;
+  height: 96rpx;
+  line-height: 162rpx;
+  transform: rotate(-45deg);
+  font-family: PingFangSC-Semibold;
+  font-size: 10px;
+  color: #BB3121;
+  text-align: center;
+  background: #FFE720;
+}
+.lineTd {
+  position: relative;
+  overflow: hidden;
+}
+.lineTd span {
+  display: block;
+  width: 130%;
+  height: 1px; 
+  background-color: #FDDEDE;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(28deg);
+  transform-origin: 0 0;
+}
+.buttonFuli {
+  width: 584rpx;
+  height: 116rpx;
+  line-height: 116rpx;
+  background-image: url("../../../images/index/but_lingqufuli@2x.png");
+  background-size: 100% 100%;
+  margin: 40rpx auto 0;
+  font-family: PingFangSC-Semibold;
+  font-size: 48rpx;
+  color: #D75B18;
+  text-align: center;
+}
+
+.iosTip {
+  font-size: 24rpx;
+  color: #FFFFFF;
+  padding: 0 24rpx;
+  margin-top: 20rpx;
+}

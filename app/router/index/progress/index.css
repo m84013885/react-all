@@ -1,0 +1,92 @@
+.progressWrapper {
+  position: relative;
+  width: 664rpx;
+  margin: 26rpx auto 0;
+}
+.progress {
+  width: 100%;
+  height: 20rpx;
+  border-radius: 8rpx;
+  padding: 6rpx;
+  background: #D0321F;
+}
+.progressBar {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  border-radius: 6rpx;
+  overflow: hidden;
+  background-image: url("../../../images/index/pbar_gray@2x.png");
+}
+.progressBarInner {
+  height: 100%;
+  background-size: auto 100%;
+  background-image: url("../../../images/index/pbar_yellow@2x.png");
+}
+.progressBarInner1{
+  composes: progressBarInner;
+  width: 16%;
+}
+.progressBarInner2{
+  composes: progressBarInner;
+  width: 50%;
+}
+.progressBarInner3{
+  composes: progressBarInner;
+  width: 88%;
+}
+.dot {
+  position: absolute;
+  top: -18rpx;
+  left: 0;
+  width: 56rpx;
+  height: 56rpx;
+  background-image: url("../../../images/index/redpoint@2x.png");
+}
+.dot1{
+  composes: dot;
+  left: 80rpx;
+}
+.dot2{
+  composes: dot;
+  left: 306rpx;
+}
+.dot3{
+  composes: dot;
+  left: 536rpx;
+}
+
+.progressInfos {
+  display: flex;
+  padding-top: 20rpx;
+}
+.progressInfoItem {
+  flex-grow: 1;
+  font-family: PingFangSC-Semibold;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/*  */
+.currentMessage {
+  background: #FFF9FF;
+  border-radius: 20rpx;
+  padding: 26rpx 32rpx 20rpx 38rpx;
+  margin-top: 20rpx;
+}
+.messageTitle {
+  font-family: PingFangSC-Semibold;
+  font-size: 36rpx;
+  color: #BB3121;
+  text-align: center;
+  padding-bottom: 4rpx;
+}
+.messageItem {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #BB3121;
+  line-height: 40rpx;
+  margin-top: 14rpx;
+}

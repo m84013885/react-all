@@ -1,0 +1,24 @@
+.platform {
+  width: 710rpx;
+  margin: 0 auto;
+}
+.platformTopBoard {
+  width: 100%;
+  height: 84rpx;
+  background-image: url("../../../images/index/platformbg_1@2x.png");
+}
+.platformContainerOuter {
+  width: 100%;
+  background-image: linear-gradient(180deg, #F55340 100rpx, transparent 100%);
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  margin-top: -2px;
+}
+.platformContainer {
+  width: 100%;
+  background: #F55340;
+  box-shadow: inset 0 -1px 3px 0 #C94535, inset 0 1px 3px 0 #FFA79C;
+  border-radius: 14rpx 14rpx 32rpx 32rpx;
+  padding-top: 1px;
+  padding-bottom: 34rpx;
+}

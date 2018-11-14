@@ -1,0 +1,77 @@
+*{
+  font-weight: normal;
+  line-height: 1.5;
+  font-family: PingFangSC, HYQiHei-IZS,Helvetica Neue,Helvetica,Hiragino Sans GB,STHeitiSC-Light,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+}
+body,html {
+  height: 100%;
+}
+.container{
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  background-color:#FF9F06;
+  padding-bottom: 48rpx;
+  padding-top: 580rpx;
+  background-image: url("../../images/index/top@2x.png");
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.bgimg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* copy */
+.copyright {
+  font-family: PingFangSC-Semibold;
+  font-size: 24rpx;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 34rpx;
+  color: #F55340;
+}
+
+/* toast */
+.toast {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: all .3s ease;
+  opacity: 0;
+  z-index: 99;
+}
+
+.toastShow {
+  composes: toast;
+  transform: translateY(-200%);
+  opacity: 1;
+}
+
+.toastText {
+  max-width: 50%;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10rpx 20rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+/*  */
+.rule {
+  position: absolute;
+  top: 444rpx;
+  right: 0;
+  width: 168rpx;
+  height: 74rpx;
+  background-image: url("../../images/index/rule_tips@2x.png");
+  z-index: 99;
+}
+

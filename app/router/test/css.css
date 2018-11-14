@@ -1,0 +1,13 @@
+*{
+    font-weight: normal;
+    line-height: 1.5;
+    font-family: PingFangSC, HYQiHei-IZS,Helvetica Neue,Helvetica,Hiragino Sans GB,STHeitiSC-Light,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+}
+body,html {
+    height: 100%;
+}
+.container{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}

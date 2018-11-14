@@ -1,0 +1,94 @@
+.wrapperHidden {
+  display: none;
+}
+.wrapper {
+  position: relative;
+  width: 90px;
+  height: 121px;
+  margin-top: 7px;
+  margin-left: 2px;
+}
+.ngbg {
+  position: relative;
+  width: 85px;
+  height: 78px;
+  background-image: url("../../../images/enter/treasure@2x.png");
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.timerHidden {
+  display: none;
+}
+.timer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 5px;
+  top: 63px;
+  width: 70px;
+  height: 18px;
+  /* line-height: 14px; */
+  border-radius: 16px;
+  background: #D02813;
+  border: 2px solid #F55340;
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 0;
+  /* text-align: center; */
+  white-space: nowrap;
+}
+.count {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  line-height: 19px;
+  border-radius: 50%;
+  background: #F55340;
+  border: 1px solid #fff;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0;
+  text-align: center;
+}
+.countHidden {
+  display: none;
+}
+.prizeBox {
+  width: 86px;
+  height: 32px;
+  line-height: 25px;
+  background-image: url("../../../images/enter/toast_tip.png");
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .1s ease;
+}
+.canvas {
+  position: absolute;
+  top: -11px;
+  left: -3px;
+  display: block;
+  width: 95px;
+  height: 50px;
+  margin: 0 auto;
+}
+.canvasHidden {
+  display: none;
+}
+.prizeBoxShow {
+  composes: prizeBox;
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -1,0 +1,26 @@
+{
+  "routers": [
+    {
+      "name": "home",
+      "template": "index"
+    },
+    {
+      "name": "enter",
+      "template": "enter"
+    },
+    {
+      "name": "test",
+      "template": "test"
+    }
+  ],
+  "consoleConfig": false,
+  "netWork": {
+    "port": "8082"
+  },
+  "publicPath": "https://static.app-remix.com/activityWeb/activityThanksgiving/assets",
+  "myProxy": {
+    "router": "v1",
+    "url": "http://test1.app-remix.com"
+  },
+  "common": "https://static.app-remix.com/common/pfrr.1523972959720.js"
+}

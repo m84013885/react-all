@@ -1,0 +1,43 @@
+.portraitFullsize {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140rpx;
+  height: 144rpx;
+}
+.portraitBg {
+  composes: portraitFullsize;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../../images/index/nangua.png");
+  padding-top: 6rpx;
+}
+.portrait {
+  position: relative;
+  width: 96rpx;
+  height: 96rpx;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid #F34E4B;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.live {
+  position: absolute;
+  left: 6rpx;
+  bottom: -10rpx;
+  width: 80rpx;
+  height: 32rpx;
+  line-height: 33rpx;
+  background-image: linear-gradient(180deg, #FCDF64 0%, #F8BB34 100%);
+  font-family: PingFangHK-Semibold;
+  font-size: 20rpx;
+  color: #9A4B4C;
+  letter-spacing: 0.9px;
+  text-align: center;
+  border-radius: 32rpx;
+}

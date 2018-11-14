@@ -1,0 +1,43 @@
+.treasure {
+  position: absolute;
+  top: -112rpx;
+  width: 100%;
+
+  display: flex;
+  padding: 0 10rpx;
+  z-index: 9;
+  /* margin-top: -110rpx; */
+}
+.treasureItem {
+  flex-grow: 1;
+}
+
+.treasureBox {
+  width: 200rpx;
+  height: 184rpx;
+  margin: 0 auto;
+}
+.treasureBox1Off {
+  composes: treasureBox;
+  background-image: url("../../../images/index/box_off@2x.png");
+}
+.treasureBox1On {
+  composes: treasureBox;
+  background-image: url("../../../images/index/box_on@2x.png");
+}
+.treasureBox2Off {
+  composes: treasureBox;
+  background-image: url("../../../images/index/gift_off@2x.png");
+}
+.treasureBox2On {
+  composes: treasureBox;
+  background-image: url("../../../images/index/gift_on@2x.png");
+}
+.treasureBox3Off {
+  composes: treasureBox;
+  background-image: url("../../../images/index/crash_off@2x.png");
+}
+.treasureBox3On {
+  composes: treasureBox;
+  background-image: url("../../../images/index/crash_on@2x.png");
+}

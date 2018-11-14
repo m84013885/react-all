@@ -1,0 +1,57 @@
+.champion {
+  display: flex;
+  width: 100%;
+  height: 404rpx;
+  margin: 0 auto;
+  background-image: url("../../../images/index/list_bg@2x.png");
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.item {
+  width: 50%;
+}
+.text {
+  font-family: PingFangSC-Semibold;
+  font-size: 40rpx;
+  color: #BB3121;
+  text-align: center;
+  margin-top: 36rpx;
+}
+.portraitWrapper {
+  position: relative;
+  width: 256rpx;
+  height: 256rpx;
+  background-size: 100% 100%;
+  margin: 8rpx auto 0;
+}
+.portraitChampion {
+  composes: portraitWrapper;
+  background-image: url("../../../images/index/champion@2x.png");
+  
+}
+.portraitHelper {
+  composes: portraitWrapper;
+  background-image: url("../../../images/index/assistant@2x.png");
+}
+.portrait {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 48rpx;
+  margin: 0 auto;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  background-size: 100% 100%;
+}
+.name {
+  font-family: PingFangSC-Semibold;
+  font-size: 14px;
+  color: #BB3121;
+  text-align: center;
+  margin-top: -25rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 30rpx;
+}

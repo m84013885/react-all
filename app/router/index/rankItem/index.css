@@ -1,0 +1,116 @@
+.rankItemNoBg {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150rpx;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+}
+.rankItem {
+  composes: rankItemNoBg;
+}
+.rankItem:nth-child(odd) {
+  background: #FDF2F2;
+}
+.rankItem:nth-child(even) {
+  background: #FFFFFF;
+}
+.rank {
+  flex-shrink: 0;
+  width: 36rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  background: #EC4D3B;
+  font-family: PingFangSC-Semibold;
+  font-size: 24rpx;
+  color: #FFF9FF;
+  border-radius: 50%;
+  margin-right: 6rpx;
+}
+.portraitWrapper {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140rpx;
+  height: 140rpx;
+  background-size: 100% 100%;
+}
+.portraitWrapper1 {
+  composes: portraitWrapper;
+  background-image: url("../../../images/index/crown1@2x.png");
+}
+.portraitWrapper2{
+  composes: portraitWrapper;
+  background-image: url("../../../images/index/crown2@2x.png");
+}
+.portraitWrapper3{
+  composes: portraitWrapper;
+  background-image: url("../../../images/index/crown3@2x.png");
+}
+.portrait {
+  position: relative;
+  flex-shrink: 0;
+  width: 82rpx;
+  height: 82rpx;
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+.portraitsmall {
+  composes: portrait;
+  width: 64rpx;
+  height: 64rpx;
+}
+.liveTag {
+  position: absolute;
+  left: -2rpx;
+  bottom: -14rpx;
+  width: 84rpx;
+  height: 28rpx;
+  background-image: url("../../../images/index/live@2x.png");
+}
+.portraitsmall > .liveTag {
+  left: -12rpx;
+}
+.centerInfo {
+  flex-shrink: 0;
+  width: 260rpx;
+  overflow: hidden;
+  margin-left: 9rpx;
+}
+.name {
+  font-family: PingFangSC-Semibold;
+  font-size: 28rpx;
+  color: #BB3121;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.count {
+  font-family: PingFangSC-Semibold;
+  font-size: 28rpx;
+  color: #BB3121;
+}
+.rightInfo {
+  flex-grow: 1;
+  margin-left: 26rpx;
+}
+.buttonFollow {
+  width: 100rpx;
+  height: 56rpx;
+  line-height: 59rpx;
+  background: #FFE720;
+  border-radius: 32rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 24rpx;
+  color: #A75C00;
+  text-align: center;
+  margin-top: 4rpx;
+}
+.buttonFollowed {
+  composes: buttonFollow;
+  background: #E3E3E3;
+  color: #B2B2B2;
+}

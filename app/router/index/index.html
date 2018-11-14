@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+	<meta name="x5-orientation" content="portrait" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no">
+	<title>双11</title>
+</head>
+
+<body>
+	<div id='main'></div>
+	<script>
+		window.serverData = {
+			apiURL: '/v1/activity/halloweendayfollow',
+			inapp_info: true,
+			login_info: true,
+			stage: 3, // 阶段， 1-2-3, 11/08-11/11, 11/10-11/11, 11/11
+			download: "http://a.app.qq.com/o/simple.jsp?pkgname=qsbk.app.remix",
+			isAnchor: false,
+			share: {
+				pic: 'https://pic.app-remix.com/26fd06db0c08cd4.png',
+				title: '周年庆典，每天必送2万元福利',
+				content: '2周年庆典，登录参与抽奖，每天必送2万元福利',
+				url: 'http://test1.app-remix.com/v1/activity/secondAnniversary/main',
+			},
+			yestodayChampion: { // 昨日冠军
+				headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+				name: '用户昵称最多一百个字', // 主播昵称
+				live: true, // 是否正在直播
+				uid: '1',
+				source: '2',
+				platform_id: '3',
+				top1headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg',
+				top1name: '丸子的忠实粉丝啊哈哈'
+			},
+			// yestodayChampion: null,
+			todayTop3: [ // 日榜
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字', // 主播昵称
+					rank: 1, // 排名
+					num: 13168, // 积分
+					live: 1, // 是否正在直播
+					uid: '1111',
+					source: '2',
+					platform_id: '3',
+					top1headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg',
+					top1name: '丸子的忠实粉丝啊哈哈',
+					top1point: 124588,
+					follow: 0
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字', // 主播昵称
+					rank: 2, // 排名
+					num: 13168, // 积分
+					live: 0, // 是否正在直播
+					uid: '1112',
+					source: '2',
+					platform_id: '3',
+					top1headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg',
+					top1name: '丸子的忠实粉丝啊哈哈',
+					top1point: 124588,
+					follow: 1
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字', // 主播昵称
+					rank: 3, // 排名
+					num: 13168, // 积分
+					live: 1, // 是否正在直播
+					uid: '1113',
+					source: '2',
+					platform_id: '3',
+					top1headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg',
+					top1name: '丸子的忠实粉丝啊哈哈',
+					top1point: 124588,
+					follow: 1
+				}
+			],
+			actorList: [ // 购物榜
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字', // 主播昵称
+					rank: 1, // 排名
+					num: 13168, // 购物值
+					live: 1, // 是否正在直播
+					uid: '1111',
+					source: '2',
+					platform_id: '3',
+					follow: 0
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字', // 主播昵称
+					rank: 2, // 排名
+					num: 13168, // 购物值
+					live: 0, // 是否正在直播
+					uid: '167',
+					source: '2',
+					platform_id: '3',
+					follow: 0
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字', // 主播昵称
+					rank: 3, // 排名
+					num: 13168, // 购物值
+					live: 0, // 是否正在直播
+					uid: '1898',
+					source: '2',
+					platform_id: '3',
+					follow: 0
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字', // 主播昵称
+					rank: 4, // 排名
+					num: 13168, // 购物值
+					live: 1, // 是否正在直播
+					uid: '1',
+					source: '2',
+					platform_id: '3',
+					follow: 1
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字', // 主播昵称
+					rank: 5, // 排名
+					num: 13168, // 购物值
+					live: true, // 是否正在直播
+					uid: '1',
+					source: '2',
+					platform_id: '3',
+					follow: 1
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字用户昵称最多一百个字', // 主播昵称
+					rank: 6, // 排名
+					num: 13168, // 购物值
+					live: true, // 是否正在直播
+					uid: '1',
+					source: '2',
+					platform_id: '3',
+					follow: 1
+				}
+			],
+			richerList: [ // 助力榜
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: 'hahahha',
+					rank: 1, // 排名
+					num: 13168, // 贡献值
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字',
+					rank: 2, // 排名
+					num: 13168, // 贡献值
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字',
+					rank: 3, // 排名
+					num: 13168, // 贡献值
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '6768687',
+					rank: 4, // 排名
+					num: 13168, // 贡献值
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字',
+					rank: 5, // 排名
+					num: 13168, // 贡献值
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字',
+					rank: 6, // 排名
+					num: 13168, // 贡献值
+				},
+				{
+					headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', // 主播
+					name: '用户昵称最多一百个字',
+					rank: 7, // 排名
+					num: 13168, // 贡献值
+				}
+			],
+			userInfo: { // 用户信息
+				headurl: 'http://img5.imgtn.bdimg.com/it/u=3249243410,892137105&fm=26&gp=0.jpg', //用户头像
+				name: '为美女大姐姐刷礼物', // 用户姓名
+				allowance: 29898 // 我的津贴
+			},
+			userInfo: null,
+			actorInfo: { // 打开当前页面的主播信息
+				headurl: 'http://avatar.app-remix.com/live_default2.jpg?imageMogr2/format/jpg/thumbnail/300x300/auto-orient', //主播
+				name: '用户昵称最多一百个字', // 主播昵称
+				allrank: '100+', // 总榜排名
+				rank: '100+', // 日榜排名
+				allScore: 132167, // 购物值总计
+				todayScore: 64274 //  今日购物值
+			},
+			// actorInfo: null,
+			app: 1,
+			user_info: {
+				source: '2',
+				uid: '3',
+			}
+		}
+
+		window.customTexts = {
+			RULE_TEXTS: [{
+				title: '开宝箱拿津贴',
+				contents: [
+					'- 主播集满1111购物值，即可召唤双11津贴宝箱，宝箱中会随机爆出双11津贴和钻石，在11月11日当日使用津贴充值，可享万元返钻！津贴收集的越多，充值优惠力度越大，赶快去集双11津贴吧！',
+					'- 1钻石=1购物值，赠送“买买买”、“清空购物车”可获得双倍购物值，周星礼物、荧光棒不计算购物值。',
+					'- 活动期间，游戏直播间、电影直播间不参与该活动，主播在播游戏期间的收入以及用户在游戏直播间的送礼消费不计入榜单。'
+				]
+			}, {
+				title: '特效礼物折扣',
+				contents: [
+					'- 限时特效“流星雨”、“烟花”上线，每款仅需666钻石！',
+					'- 8款特效礼物限时打折出售，千万不要错过哦，错过这波等一年！',
+					'- 本活动最终解释权归本平台所有。'
+				]
+			}, {
+				title: '兑津贴享返钻',
+				contents: [
+					'- 11月11日期间充值，享双11充值特惠，使用津贴可享受超高额度的充值返钻哦！',
+					'- 充值时系统自动扣除相应津贴。',
+					'- 津贴使用期限为11月11日0:00-24:00，过期作废。'
+				],
+				table: {
+					thead: ['消耗津贴', '充值金额(元)', '额外赠送(钻)'],
+					tbody: [
+						['366', '298', '400'],
+						['466', '588', '1000'],
+						['566', '1598', '3200'],
+						['666', '3698', '9000']
+					]
+				}
+			}],
+			PRIZE_TEXTS: [
+				['TOP1', 'banner推荐2天+主播活动期间收获礼券的14%额外礼券奖励+定制礼物3周'],
+				['TOP2', 'banner推荐1天+主播活动期间收获礼券的13%额外礼券奖励+定制礼物2周'],
+				['TOP3', 'banner推荐1天+主播活动期间收获礼券的12%额外礼券奖励+定制礼物1周'],
+				['TOP4', '主播活动期间收获礼券的10%额外礼券奖励+定制礼物1周'],
+				['TOP5', '主播活动期间收获礼券的10%额外礼券奖励'],
+				['日榜TOP1', '浪漫小火车x5']
+			],
+			PRIZE_TIP: '11月8日-11月11日主播排名奖励',
+			PRIZE_TIP_TEXTS: [
+				'温馨提示：',
+				'- 主播活动期间收获的周星礼物不计入额外礼券奖励中；',
+				'- 定制礼物图片、名称、定价（1~10钻）由主播决定，定制礼物仅在该主播直播间上线。'
+			],
+			PROGRESS_INFOS: [
+				{
+					title: '开宝箱拿津贴',
+					infos: [
+						'- 主播集满1111购物值，即可召唤双11津贴宝箱，宝箱中会随机爆出双11津贴和钻石，在11月11日当日使用津贴充值，可享万元返钻！津贴收集的越多，充值优惠力度越大，赶快去集双11津贴吧！',
+						'- 1钻石=1购物值，赠送“买买买”、“清空购物车”可获得双倍购物值，周星礼物、荧光棒不计算购物值。',
+						'- 活动期间，游戏直播间、电影直播间不参与该活动，主播在播游戏期间的收入以及用户在游戏直播间的送礼消费不计入榜单。',
+						'- 本活动最终解释权归本平台所有。'
+					]
+				},
+				{
+					title: '特效礼物折扣',
+					infos: [
+						'- 限时特效“流星雨”、“烟花”上线，每款仅需666钻石！',
+						'- 8款特效礼物限时打折出售，千万不要错过哦，错过这波等一年！',
+						'- 本活动最终解释权归本平台所有。'
+					]
+				},
+				{
+					title: '兑津贴享返钻',
+					infos: [
+						'- 11月11日期间充值，享双11充值特惠，使用津贴可享受超高额度的充值返钻哦！',
+						'- 充值时系统自动扣除相应津贴。',
+						'- 津贴使用期限为11月11日0:00-24:00，过期作废。'
+					]
+				}
+			],
+			ALLOWANCE: [
+				{
+					money: '3698', withoutAllowance: '44480', withAllowance: '45980', allowance: '2000', discount: '8'
+				},
+				{
+					money: '1598', withoutAllowance: '18780', withAllowance: '19180', allowance: '1500', discount: '8.3'
+				},
+				{
+					money: '588', withoutAllowance: '6680', withAllowance: '6880', allowance: '1200', discount: '8.5'
+				},
+				{
+					money: '298', withoutAllowance: '3200', withAllowance: '3380', allowance: '1000', discount: '8.8'
+				},
+				{
+					money: '98', withoutAllowance: '1030', withAllowance: null, allowance: null, discount: null
+				}
+			],
+			TIP: '温馨提示：苹果用户仅限通过微信公众号充值才享受优惠哦！请关注微信公众号“热猫remix"（微信号：remix_live），选择“购买钻石”即可充值！'
+		} 
+	</script>
+	<script type="text/javascript" src="https://static.app-remix.com/common/pfrr.1523972959720.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+.rankChecker {
+  width: 700rpx;
+}
+.infoClassName {
+  height: 168rpx;
+}
+.buttonSwicther {
+  display: flex;
+  justify-content: space-between;
+  width: 670rpx;
+  margin: 0 auto;
+  padding-top: 12rpx;
+}
+.buttonSwitchBorder {
+  width:220rpx;
+  height: 120rpx;
+  border-radius: 12rpx;
+  padding: 8rpx;
+  background: #D02813;
+}
+.buttonSwitch {
+  width:204rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 24px;
+  color: #BB3121;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.buttonSwitchDefault {
+  composes: buttonSwitch;
+  background: #F98E81;
+  box-shadow: inset -2px -2px 3px 0 #DD5F50,
+  inset 3px 3px 1px 0 #FFA69C;
+}
+
+.buttonSwitchActive {
+ composes: buttonSwitch;
+ background: #FFE720;
+ box-shadow: 0 0 4px 0 #FFE720,
+ inset -2px -2px 3px 0 #FF9020,
+ inset 3px 3px 1px 0 #FFF393;
+}
+
+/* 榜单 */
+.rankWrapper {
+  margin-top: 50rpx;
+}
+
+.rankPanel {
+  width: 700rpx;
+  margin: 20rpx auto 0;
+  background: #F55340;
+  box-shadow: inset 0 -1px 3px 0 #C94535,
+  inset 0 1px 3px 0 #FFA79C;
+  border-radius: 10px;
+  padding: 56rpx 16rpx 58rpx;
+}
+.rankHeader {
+  display: flex;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #BB3121;
+}
+.header1 {
+  flex-shrink: 0;
+  width: 230rpx;
+  line-height: inherit;
+  text-align: center;
+}
+.header2 {
+  flex-shrink: 0;
+  width: 214rpx;
+  line-height: inherit;
+  text-align: left;
+}
+.header3 {
+  flex-grow: 1;
+  line-height: inherit;
+  text-align: center;
+}
+.rankList {
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.dateRankList {
+  border-radius: 0 0 20rpx 20rpx;
+  overflow: hidden;
+}
+
+/*  */
+.dateRank {
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.dateItem {
+  position: relative;
+  background-color: #FFF9FF;
+  padding-bottom: 30rpx;
+}
+.dateItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 640rpx;
+  height: 1px;
+  background-color: #FAE5FA;
+  top: 0;
+  left: 16rpx;
+}
+.dateTopItem {
+  display: flex;
+  align-items: center;
+  width: 564rpx;
+  height: 98rpx;
+  background: #FFEEFE;
+  border-radius: 12rpx;
+  padding-left: 28rpx;
+  padding-right: 16rpx;
+  margin-left: 74rpx;
+}
+.topPortrait {
+  flex-shrink: 0;
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+}
+.topInfos {
+  width: 300rpx;
+  padding-left: 14rpx;
+  overflow: hidden;
+}
+.topName {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #BB3121;
+}
+.topNum {
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #BB3121;
+}
+.topTag {
+  flex-shrink: 0;
+  width: 154rpx;
+  height: 50rpx;
+  background-image: url("../../../images/index/icon_zuijiazhuli@2x.png");
+}

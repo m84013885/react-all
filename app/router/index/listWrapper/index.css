@@ -1,0 +1,49 @@
+/* list */
+.listBgContainer {
+  width: 700rpx;
+  margin: 30rpx auto 0;
+  background: #8239AA;
+  border: 1px solid #A956D6;
+  padding: 20rpx 0;
+  border-radius: 14rpx;
+}
+.listWrapper {
+  position: relative;
+  width: 640rpx;
+  background: #511379;
+  border: 2px solid #EB5FFF;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+.listWrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -12rpx;
+  left: -12rpx;
+  width: 664rpx;
+  height: 60rpx;
+  background-image: url("../../../images/index/bg1.png");
+  background-size: 100% 100%;
+}
+
+.listWrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -14rpx;
+  left: -12rpx;
+  width: 664rpx;
+  height: 60rpx;
+  background-image: url("../../../images/index/bg2.png");
+  background-size: 100% 100%;
+}
+
+.lists {
+  position: relative;
+  min-height: 50rpx;
+  z-index: 3;
+}
