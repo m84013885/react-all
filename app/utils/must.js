@@ -13,7 +13,7 @@ function Mustparameter () {
   const net = 'wifi'
   let sys = 'web'
   const chn = 'remix_activity'
-  if (ua.indexOf('android')) {
+  if (ua.indexOf('android')!==-1) {
     sys = 'android'
   }
   else {
